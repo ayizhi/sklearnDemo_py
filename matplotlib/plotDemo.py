@@ -15,4 +15,7 @@ ax3 = fig.add_subplot(2,2,3)
 plt.plot(randn(50).cumsum(),'k--')
 _ = ax1.hist(randn(100),bins=20,color='k',alpha=0.3)
 ax2.scatter(np.arange(30),np.arange(30) + 3*randn(30))
+
+#调整图跟图之间的距离
+plt.subplots_adjust(wspace=0.2,hspace=0.25)
 plt.show()
